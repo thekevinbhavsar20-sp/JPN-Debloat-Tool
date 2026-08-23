@@ -114,11 +114,3 @@ Use at your own risk. While pm uninstall -k --user 0 is reversible via factory r
 
 
 
-
-
-LICENSE
-
-
-
-MIT - see LICENSE file
-
