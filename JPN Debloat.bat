@@ -127,7 +127,6 @@ call :removeApp com.facebook.appmanager                                         
 call :removeApp com.facebook.services                                                  "Meta Services"
 call :removeApp com.jio.myjio                                                           "MyJio"
 call :removeApp com.android.nfc                                                          "NFC Service"
-call :removeApp com.android.hotspot2.osulogin                                             "OsuLogin"
 call :removeApp com.android.managedprovisioning                                            "Work Setup"
 call :removeApp com.google.android.youtube                                                  "YouTube"
 call :removeApp com.google.android.apps.youtube.music                                        "YouTube Music"
