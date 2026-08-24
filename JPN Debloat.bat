@@ -152,8 +152,6 @@ call :removeApp com.android.providers.userdictionary                            
 :: GMS + Play Store removed LAST - too many other components stay
 :: bound to these while active, removing them mid-list risks a
 :: soft reboot. Everything else is already gone by this point.
-call :removeApp com.google.android.gms                                                                    "Google Play Services"
-call :removeApp com.android.vending                                                                        "Play Store"
 
 echo ----------------------------------------------------------------
 echo MINIMAL FEATURES profile complete.
