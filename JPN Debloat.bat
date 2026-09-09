@@ -47,43 +47,116 @@ title Debloat in Process
 echo Applying RAW DEVICE profile...
 echo ----------------------------------------------------------------
 
-call :removeApp com.android.egg                          "Android S Easter Egg"
-call :removeApp com.google.android.setupwizard            "Android Setup"
-call :removeApp com.jio.adc.embedded                       "ANH"
-call :removeApp com.android.carrierdefaultapp               "CarrierDefaultApp"
-call :removeApp com.google.android.ims                      "Carrier Services"
-call :removeApp com.google.android.configupdater             "ConfigUpdater"
-call :removeApp com.android.bips                              "Default Print Service"
-call :removeApp com.google.android.apps.tachyon                "Duo"
-call :removeApp com.android.emergency                            "Emergency Information"
-call :removeApp com.caf.fmradio                                   "FM Radio"
-call :removeApp com.mmigroup.fmradio                                "FmTest"
-call :removeApp com.glance.lockscreenJioNext                         "Glance"
-call :removeApp com.google.android.apps.assistant                     "Google Assistant Go"
-call :removeApp com.google.android.gms.location.history                "Google Location History"
-call :removeApp com.google.android.partnersetup                         "Google Partner Setup"
-call :removeApp com.google.android.videos                                "Google TV"
-call :removeApp com.google.android.apps.nbu.paisa.user                    "GPay"
-call :removeApp com.jiochat.jiochatapp                                     "JioChat"
-call :removeApp com.jio.media.ondemand.go                                   "JioCinema"
-call :removeApp com.jio.jiogameslite                                         "JioGames"
-call :removeApp com.jio.hh.lite                                               "JioHealthHub"
-call :removeApp com.jpl.jiomart                                                "JioMart"
-call :removeApp com.jio.meet.lite                                               "JioMeet"
-call :removeApp com.jio.jmmi                                                     "JioMMI"
-call :removeApp com.jio.media.jiobeats.lite                                       "JioSaavn"
-call :removeApp com.jio.jioplay.tv.go                                              "JioTV"
-call :removeApp com.google.android.apps.maps                                        "Maps"
-call :removeApp com.facebook.system                                                  "Meta App Installer"
-call :removeApp com.facebook.appmanager                                               "Meta App Manager"
-call :removeApp com.facebook.services                                                  "Meta Services"
-call :removeApp com.jio.myjio                                                           "MyJio"
-call :removeApp com.android.nfc                                                          "NFC Service"
-call :removeApp com.android.hotspot2.osulogin                                             "OsuLogin"
-call :removeApp com.android.managedprovisioning                                            "Work Setup"
-call :removeApp com.google.android.youtube                                                  "YouTube"
-call :removeApp com.google.android.apps.youtube.music                                        "YouTube Music"
-call :removeApp com.google.android.apps.nbu.rani                                              "Tips"
+echo Android S Easter Egg
+adb shell pm uninstall -k --user 0 com.android.egg
+
+echo Android Setup
+adb shell pm uninstall -k --user 0 com.google.android.setupwizard
+
+echo ANH
+adb shell pm uninstall -k --user 0 com.jio.adc.embedded
+
+echo CarrierDefaultApp
+adb shell pm uninstall -k --user 0 com.android.carrierdefaultapp
+
+echo Carrier Services
+adb shell pm uninstall -k --user 0 com.google.android.ims
+
+echo ConfigUpdater
+adb shell pm uninstall -k --user 0 com.google.android.configupdater
+
+echo Default Print Service
+adb shell pm uninstall -k --user 0 com.android.bips
+
+echo Duo
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+
+echo Emergency Information
+adb shell pm uninstall -k --user 0 com.android.emergency
+
+echo FM Radio
+adb shell pm uninstall -k --user 0 com.caf.fmradio
+
+echo FmTest
+adb shell pm uninstall -k --user 0 com.mmigroup.fmradio
+
+echo Glance
+adb shell pm uninstall -k --user 0 com.glance.lockscreenJioNext
+
+echo Google Assistant Go
+adb shell pm uninstall -k --user 0 com.google.android.apps.assistant
+
+echo Google Location History
+adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
+
+echo Google Partner Setup
+adb shell pm uninstall -k --user 0 com.google.android.partnersetup
+
+echo Google TV
+adb shell pm uninstall -k --user 0 com.google.android.videos
+
+echo GPay
+adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.paisa.user
+
+echo JioChat
+adb shell pm uninstall -k --user 0 com.jiochat.jiochatapp
+
+echo JioCinema
+adb shell pm uninstall -k --user 0 com.jio.media.ondemand.go
+
+echo JioGames
+adb shell pm uninstall -k --user 0 com.jio.jiogameslite
+
+echo JioHealthHub
+adb shell pm uninstall -k --user 0 com.jio.hh.lite
+
+echo JioMart
+adb shell pm uninstall -k --user 0 com.jpl.jiomart
+
+echo JioMeet
+adb shell pm uninstall -k --user 0 com.jio.meet.lite
+
+echo JioMMI
+adb shell pm uninstall -k --user 0 com.jio.jmmi
+
+echo JioSaavn
+adb shell pm uninstall -k --user 0 com.jio.media.jiobeats.lite
+
+echo JioTV
+adb shell pm uninstall -k --user 0 com.jio.jioplay.tv.go
+
+echo Maps
+adb shell pm uninstall -k --user 0 com.google.android.apps.maps
+
+echo Meta App Installer
+adb shell pm uninstall -k --user 0 com.facebook.system
+
+echo Meta App Manager
+adb shell pm uninstall -k --user 0 com.facebook.appmanager
+
+echo Meta Services
+adb shell pm uninstall -k --user 0 com.facebook.services
+
+echo MyJio
+adb shell pm uninstall -k --user 0 com.jio.myjio
+
+echo NFC Service
+adb shell pm uninstall -k --user 0 com.android.nfc
+
+echo OsuLogin
+adb shell pm uninstall -k --user 0 com.android.hotspot2.osulogin
+
+echo Work Setup
+adb shell pm uninstall -k --user 0 com.android.managedprovisioning
+
+echo YouTube
+adb shell pm uninstall -k --user 0 com.google.android.youtube
+
+echo YouTube Music
+adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
+
+echo Tips
+adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.rani
 
 echo ----------------------------------------------------------------
 echo RAW DEVICE profile complete.
@@ -95,58 +168,161 @@ title Debloat in Process
 echo Applying MINIMAL FEATURES profile...
 echo ----------------------------------------------------------------
 
-call :removeApp com.android.egg                          "Android S Easter Egg"
-call :removeApp com.google.android.setupwizard            "Android Setup"
-call :removeApp com.jio.adc.embedded                       "ANH"
-call :removeApp com.android.carrierdefaultapp               "CarrierDefaultApp"
-call :removeApp com.google.android.ims                      "Carrier Services"
-call :removeApp com.google.android.configupdater             "ConfigUpdater"
-call :removeApp com.android.bips                              "Default Print Service"
-call :removeApp com.google.android.apps.tachyon                "Duo"
-call :removeApp com.android.emergency                            "Emergency Information"
-call :removeApp com.caf.fmradio                                   "FM Radio"
-call :removeApp com.mmigroup.fmradio                                "FmTest"
-call :removeApp com.glance.lockscreenJioNext                         "Glance"
-call :removeApp com.google.android.apps.assistant                     "Google Assistant Go"
-call :removeApp com.google.android.gms.location.history                "Google Location History"
-call :removeApp com.google.android.partnersetup                         "Google Partner Setup"
-call :removeApp com.google.android.videos                                "Google TV"
-call :removeApp com.google.android.apps.nbu.paisa.user                    "GPay"
-call :removeApp com.jiochat.jiochatapp                                     "JioChat"
-call :removeApp com.jio.media.ondemand.go                                   "JioCinema"
-call :removeApp com.jio.jiogameslite                                         "JioGames"
-call :removeApp com.jio.hh.lite                                               "JioHealthHub"
-call :removeApp com.jpl.jiomart                                                "JioMart"
-call :removeApp com.jio.meet.lite                                               "JioMeet"
-call :removeApp com.jio.jmmi                                                     "JioMMI"
-call :removeApp com.jio.media.jiobeats.lite                                       "JioSaavn"
-call :removeApp com.jio.jioplay.tv.go                                              "JioTV"
-call :removeApp com.google.android.apps.maps                                        "Maps"
-call :removeApp com.facebook.system                                                  "Meta App Installer"
-call :removeApp com.facebook.appmanager                                               "Meta App Manager"
-call :removeApp com.facebook.services                                                  "Meta Services"
-call :removeApp com.jio.myjio                                                           "MyJio"
-call :removeApp com.android.nfc                                                          "NFC Service"
-call :removeApp com.android.managedprovisioning                                            "Work Setup"
-call :removeApp com.google.android.youtube                                                  "YouTube"
-call :removeApp com.google.android.apps.youtube.music                                        "YouTube Music"
-call :removeApp com.google.android.apps.nbu.rani                                              "Tips"
-call :removeApp com.google.android.calculator                                                   "Calculator"
-call :removeApp com.google.android.calendar                                                      "Calendar"
-call :removeApp com.android.providers.calendar                                                    "Calendar Storage"
-call :removeApp com.android.chrome                                                                 "Chrome"
-call :removeApp com.google.android.apps.restore                                                     "Data Restore Tool"
-call :removeApp com.google.android.apps.wellbeing                                                    "Digital Wellbeing"
-call :removeApp com.google.android.apps.docs                                                          "Drive"
-call :removeApp com.google.android.apps.photosgo                                                       "Gallery Go"
-call :removeApp com.google.android.gm                                                                   "Gmail"
-call :removeApp com.google.android.apps.searchlite                                                       "Google Go"
-call :removeApp com.google.android.gmsintegration                                                           "Lily Setup"
-call :removeApp com.google.audio.hearing.visualization.accessibility.scribe                                  "Live Transcribe"
-call :removeApp com.jio.messageslite                                                                           "Messages"
-call :removeApp com.google.android.accessibility.soundamplifier                                                 "Sound Amplifier"
-call :removeApp com.google.android.tts                                                                           "Speech Services by Google"
-call :removeApp com.android.providers.userdictionary                                                              "User Dictionary"
+echo Android S Easter Egg
+adb shell pm uninstall -k --user 0 com.android.egg
+
+echo Android Setup
+adb shell pm uninstall -k --user 0 com.google.android.setupwizard
+
+echo ANH
+adb shell pm uninstall -k --user 0 com.jio.adc.embedded
+
+echo CarrierDefaultApp
+adb shell pm uninstall -k --user 0 com.android.carrierdefaultapp
+
+echo Carrier Services
+adb shell pm uninstall -k --user 0 com.google.android.ims
+
+echo ConfigUpdater
+adb shell pm uninstall -k --user 0 com.google.android.configupdater
+
+echo Default Print Service
+adb shell pm uninstall -k --user 0 com.android.bips
+
+echo Duo
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+
+echo Emergency Information
+adb shell pm uninstall -k --user 0 com.android.emergency
+
+echo FM Radio
+adb shell pm uninstall -k --user 0 com.caf.fmradio
+
+echo FmTest
+adb shell pm uninstall -k --user 0 com.mmigroup.fmradio
+
+echo Glance
+adb shell pm uninstall -k --user 0 com.glance.lockscreenJioNext
+
+echo Google Assistant Go
+adb shell pm uninstall -k --user 0 com.google.android.apps.assistant
+
+echo Google Location History
+adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
+
+echo Google Partner Setup
+adb shell pm uninstall -k --user 0 com.google.android.partnersetup
+
+echo Google TV
+adb shell pm uninstall -k --user 0 com.google.android.videos
+
+echo GPay
+adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.paisa.user
+
+echo JioChat
+adb shell pm uninstall -k --user 0 com.jiochat.jiochatapp
+
+echo JioCinema
+adb shell pm uninstall -k --user 0 com.jio.media.ondemand.go
+
+echo JioGames
+adb shell pm uninstall -k --user 0 com.jio.jiogameslite
+
+echo JioHealthHub
+adb shell pm uninstall -k --user 0 com.jio.hh.lite
+
+echo JioMart
+adb shell pm uninstall -k --user 0 com.jpl.jiomart
+
+echo JioMeet
+adb shell pm uninstall -k --user 0 com.jio.meet.lite
+
+echo JioMMI
+adb shell pm uninstall -k --user 0 com.jio.jmmi
+
+echo JioSaavn
+adb shell pm uninstall -k --user 0 com.jio.media.jiobeats.lite
+
+echo JioTV
+adb shell pm uninstall -k --user 0 com.jio.jioplay.tv.go
+
+echo Maps
+adb shell pm uninstall -k --user 0 com.google.android.apps.maps
+
+echo Meta App Installer
+adb shell pm uninstall -k --user 0 com.facebook.system
+
+echo Meta App Manager
+adb shell pm uninstall -k --user 0 com.facebook.appmanager
+
+echo Meta Services
+adb shell pm uninstall -k --user 0 com.facebook.services
+
+echo MyJio
+adb shell pm uninstall -k --user 0 com.jio.myjio
+
+echo NFC Service
+adb shell pm uninstall -k --user 0 com.android.nfc
+
+echo Work Setup
+adb shell pm uninstall -k --user 0 com.android.managedprovisioning
+
+echo YouTube
+adb shell pm uninstall -k --user 0 com.google.android.youtube
+
+echo YouTube Music
+adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
+
+echo Tips
+adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.rani
+
+echo Calculator
+adb shell pm uninstall -k --user 0 com.google.android.calculator
+
+echo Calendar
+adb shell pm uninstall -k --user 0 com.google.android.calendar
+
+echo Calendar Storage
+adb shell pm uninstall -k --user 0 com.android.providers.calendar
+
+echo Chrome
+adb shell pm uninstall -k --user 0 com.android.chrome
+
+echo Data Restore Tool
+adb shell pm uninstall -k --user 0 com.google.android.apps.restore
+
+echo Digital Wellbeing
+adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
+
+echo Drive
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs
+
+echo Gallery Go
+adb shell pm uninstall -k --user 0 com.google.android.apps.photosgo
+
+echo Gmail
+adb shell pm uninstall -k --user 0 com.google.android.gm
+
+echo Google Go
+adb shell pm uninstall -k --user 0 com.google.android.apps.searchlite
+
+echo Lily Setup
+adb shell pm uninstall -k --user 0 com.google.android.gmsintegration
+
+echo Live Transcribe
+adb shell pm uninstall -k --user 0 com.google.audio.hearing.visualization.accessibility.scribe
+
+echo Messages
+adb shell pm uninstall -k --user 0 com.jio.messageslite
+
+echo Sound Amplifier
+adb shell pm uninstall -k --user 0 com.google.android.accessibility.soundamplifier
+
+echo Speech Services by Google
+adb shell pm uninstall -k --user 0 com.google.android.tts
+
+echo User Dictionary
+adb shell pm uninstall -k --user 0 com.android.providers.userdictionary
 
 :: GMS + Play Store removed LAST - too many other components stay
 :: bound to these while active, removing them mid-list risks a
@@ -155,15 +331,6 @@ call :removeApp com.android.providers.userdictionary                            
 echo ----------------------------------------------------------------
 echo MINIMAL FEATURES profile complete.
 goto done
-
-:removeApp
-adb shell pm uninstall -k --user 0 %~1 >nul 2>&1
-if errorlevel 1 (
-    echo [SKIPPED - not found/already removed] %~2  ^(%~1^)
-) else (
-    echo [REMOVED] %~2  ^(%~1^)
-)
-exit /b
 
 :done
 echo.
