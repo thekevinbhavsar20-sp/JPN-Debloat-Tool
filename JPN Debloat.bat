@@ -176,9 +176,6 @@ adb shell pm uninstall -k --user 0 com.android.location.fused
 echo Google One Time Init
 adb shell pm uninstall -k --user 0 com.google.android.onetimeinitializer
 
-echo Google Services Framework
-adb shell pm uninstall -k --user 0 com.google.android.gsf
-
 echo JioPhone Next System
 adb shell pm uninstall -k --user 0 com.redbend.client
 
@@ -350,6 +347,30 @@ adb shell pm uninstall -k --user 0 com.google.android.tts
 
 echo User Dictionary
 adb shell pm uninstall -k --user 0 com.android.providers.userdictionary
+
+echo CTS Shim
+adb shell pm uninstall -k --user 0 com.android.cts.ctsshim
+
+echo CTS Priv Shim
+adb shell pm uninstall -k --user 0 com.android.cts.priv.ctsshim
+
+echo Assistant Go Overlay
+adb shell pm uninstall -k --user 0 com.google.android.overlay.gmsconfig.assistantgo
+
+echo Dynamic System Updates
+adb shell pm uninstall -k --user 0 com.android.dynsystem
+
+echo Fused Location
+adb shell pm uninstall -k --user 0 com.android.location.fused
+
+echo Google One Time Init
+adb shell pm uninstall -k --user 0 com.google.android.onetimeinitializer
+
+echo JioPhone Next System
+adb shell pm uninstall -k --user 0 com.redbend.client
+
+echo Waterfall Cutout Emulation
+adb shell pm uninstall -k --user 0 com.android.internal.display.cutout.emulation.waterfall
 
 :: GMS + Play Store removed LAST - too many other components stay
 :: bound to these while active, removing them mid-list risks a
